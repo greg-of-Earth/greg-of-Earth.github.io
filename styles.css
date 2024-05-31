@@ -8,10 +8,11 @@ body {
 }
 
 header, footer {
-    background-color: #222;
-    color: #fff;
+    background-color: white;
+    
     padding: 10px 20px;
     text-align: center;
+
 }
 
 section {

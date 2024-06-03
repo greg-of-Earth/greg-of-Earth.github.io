@@ -13,7 +13,14 @@ footer {
 
 .inPage {
     padding: 20px;
-    margin: 0 10px;
+    margin: 15px;
+
+    clear: left;
+    border: black;
+    border-style: solid;
+    border-radius: 5%;
+    margin-top: 15px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 1);
 }
 
 #intro {
@@ -24,7 +31,7 @@ footer {
 }
 
 /* load background header */
-header::before {
+#topHeader::before {
     content: "";
     background-image: url("assets/images/ml.jpg");
     background-size: cover; 
@@ -37,13 +44,15 @@ header::before {
     height: 100%;
     opacity: 0.3; 
     z-index: -1; 
+   
   }
 
 
-header {
+#topHeader {
     position: relative; 
     display: flex;
     justify-content: space-evenly;
+    margin: 15px;
     z-index: 1;
 }
 
@@ -119,33 +128,35 @@ header {
 }
 
 #skillsIcon {
-    background-color: rgb(247, 240, 102)
+    background-color: rgb(247, 240, 102);
 }
 
 #awardsIcon {
-    background-color: rgb(241, 122, 205)
+    background-color:rgba(255, 166, 0, 0.952)
+    
 }
 
 #xpIcon {
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
 }
 
 #edIcon {
-    background-color: rgb(42, 255, 241)
-}
-
-#projectsIcon {
+    /* background-color: rgb(42, 255, 241) */
     background-color: rgb(12, 212, 243)
 }
 
-#aboutIcon {
-    background-color: rgb(243, 12, 12)
+#projectsIcon {
+    background-color: rgb(241, 122, 205);
 }
 
-#resumeIcon {
+#aboutIcon {
+    background-color: rgb(243, 12, 12);
+}
+
+/* #resumeIcon {
     background-color: rgb(242, 242, 242);
     border-radius: 30%;
-}
+} */
 
 .control {
     align-items: center; 
@@ -155,6 +166,8 @@ header {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
     transition: background-color 0.3s, transform 0.3s;
     font-weight: bold;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30%;
 }
 
 #controlBtns {
@@ -190,15 +203,117 @@ a:hover, a:focus { color: blue;}
     max-width: 100%;
 }
 
+.smallLogo {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    width: 5%;
+}
+
 #section1 {
     clear: left;
+    border: black;
+    border-style: solid;
+    border-radius: 5%;
+    margin-top: 15px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 1);
+
 }
+
+
+#headerAbout {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#aboutP {
+    text-align: justify;
+    padding-top: 1%;
+    margin-top:0%;
+}
+
+#aboutH {
+    align-content: center;
+    padding-left: 10px;
+}
+
+/*education*/
+#innerEdSection {
+    display: grid;
+}
+
+.inEdFigs {
+    border: thick, black;
+    border-style: solid;
+    border-radius: 25%;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.schoolHeaders {
+    text-decoration: underline;
+    font-size: xx-large;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.majorHeaders {
+    margin-top: 1%;
+    text-align: center;
+}
+
+#edFigRight {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#edFigLeft {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+
+
+/* contact */
+#contactForm {
+    display: grid
+}
+
+#subject {
+    /* width: 100%; */
+    height: auto;
+    margin-top: 10px;
+}
+
+.contactNames {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contactSubmit {
+    margin-top: 10px;
+    color:greenyellow;
+    background-color: blue;
+    width: 100%;
+    justify-self: center;
+    font-size: x-large;
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    header {
+    #topHeader {
         flex-direction: column;
         align-items: center;
+        margin: 5px;
+
     }
 
     #controlBtns {
@@ -208,10 +323,10 @@ a:hover, a:focus { color: blue;}
 }
 
 @media (max-width: 480px) {
-    header {
+    #topHeader {
         flex-direction: column;
         align-items: center;
-       
+        margin: 5px;
     }
 
 
@@ -248,4 +363,30 @@ a:hover, a:focus { color: blue;}
         display: flex;
         flex-wrap: wrap;
     }
+
+    .smallLogo {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        padding: 10px 20px;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+        transition: background-color 0.3s, transform 0.3s;
+        font-weight: bold;
+        width: 10%;
+        height: 15%;
+    }
+
+    #innerEdSection {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .schoolLogos {
+        justify-items: center;
+        max-width: 100px;
+    }
+
+    
 }

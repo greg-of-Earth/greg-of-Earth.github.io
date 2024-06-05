@@ -12,9 +12,9 @@ footer {
 }
 
 .inPage {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 15px;
-
+    display: grid;
     clear: left;
     border: black;
     border-style: solid;
@@ -197,10 +197,12 @@ a:hover, a:focus { color: blue;}
 
 #headImg {
     border: black;
-    border-style: double;
+    border-style: solid;
     border-radius: 30%;
     height: auto;
     max-width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+
 }
 
 .smallLogo {
@@ -214,6 +216,8 @@ a:hover, a:focus { color: blue;}
     transition: background-color 0.3s, transform 0.3s;
     font-weight: bold;
     width: 5%;
+    grid-row: 1;
+    grid-column: 1;
 }
 
 #section1 {
@@ -223,30 +227,29 @@ a:hover, a:focus { color: blue;}
     border-radius: 5%;
     margin-top: 15px;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 1);
-
+    display: block;
 }
 
 
-#headerAbout {
+.subHeaders {
     display: flex;
     justify-content: flex-start;
+    padding-left: 10px;
 }
 
 #aboutP {
     text-align: justify;
     padding-top: 1%;
     margin-top:0%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#aboutH {
-    align-content: center;
-    padding-left: 10px;
+.titles {
+    padding-left: 5px;
 }
 
 /*education*/
-#innerEdSection {
-    display: grid;
-}
 
 .inEdFigs {
     border: thick, black;
@@ -255,6 +258,7 @@ a:hover, a:focus { color: blue;}
     text-align: center;
     padding: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+
 }
 
 .schoolHeaders {
@@ -269,21 +273,62 @@ a:hover, a:focus { color: blue;}
     text-align: center;
 }
 
+
 #edFigRight {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 2;
 }
 
 #edFigLeft {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 1;
 }
 
+table, th, td {
+    border: 2px solid black;
+    /* width: 100%; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
 
+
+#courses {
+    width: 70%;
+}
+
+#gradeHeader, .grade  {
+    width: 30%;
+    text-align: center;
+}
+
+
+#edBackTitle1 {
+    grid-row: 1;
+    grid-column: 1;
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#gpa {
+    grid-row: 1;
+    grid-column: 2;
+    align-content: center;
+}
+
+#csunBack {
+    display: none;
+}
+
+#lamcBack {
+    display: none;
+}
 
 /* contact */
 #contactForm {
-    display: grid
+    display: grid;
 }
 
 #subject {
@@ -344,6 +389,11 @@ a:hover, a:focus { color: blue;}
     #headerFig {
         order:1;
     }
+
+    .subHeaders {
+        /* grid-row: 1; */
+        justify-content: space-evenly;
+    }
     
     #clusterL {
         order: 2;
@@ -378,9 +428,27 @@ a:hover, a:focus { color: blue;}
         height: 15%;
     }
 
-    #innerEdSection {
+    /* #innerEdSection {
         display: block;
         justify-content: space-evenly;
+    } */
+
+    .edBackHeader {
+        font-size: xx-small;
+    }
+
+    /* #section2 {
+        padding: 0;
+    } */
+
+    #edFigLeft {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #edFigRight {
+        grid-row: 3;
+        grid-column: 1;
     }
 
     .schoolLogos {

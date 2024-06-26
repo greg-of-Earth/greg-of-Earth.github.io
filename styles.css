@@ -307,8 +307,8 @@ table, th, td {
     grid-row: 1;
     grid-column: 1;
     gap: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
+    /* margin-top: 0;
+    margin-bottom: 10px; */
     text-align: right;
 }
 
@@ -318,17 +318,21 @@ table, th, td {
     align-content: center;
 }
 
-#csunBack {
+#csunBack, #lamcBack {
     display: none;
+    padding: inherit;
+    padding-top: initial;
 }
-
+/* 
 #lamcBack {
     display: none;
-}
+    padding: inherit;
+} */
 
 /* contact */
 #contactForm {
     display: grid;
+    margin: 25px;
 }
 
 #subject {
@@ -344,11 +348,58 @@ table, th, td {
 
 #contactSubmit {
     margin-top: 10px;
-    color:greenyellow;
+    color: white;
     background-color: blue;
     width: 100%;
     justify-self: center;
     font-size: x-large;
+    border-radius: 15%;
+}
+
+/*skills*/
+.skillsTbls {
+    margin: 25px;
+}
+
+
+/*badges*/
+.badgesLst > li {
+    border: 2px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    box-shadow:10px 10px;
+}
+
+/* projects */
+.projFigs {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.projCaps > h5 {
+    text-decoration: underline;
+}
+
+.projFigs > img {
+    max-height: 150px;
+    max-width: 175px;
+    min-width: 175px;
+    padding: 10px;
+    justify-self: center;
+}
+
+.projImgs {
+    align-self: center;
+}
+
+.projCaps > p > span {
+    font-weight: 700;
 }
 
 
@@ -428,18 +479,19 @@ table, th, td {
         height: 15%;
     }
 
-    /* #innerEdSection {
-        display: block;
-        justify-content: space-evenly;
-    } */
 
     .edBackHeader {
-        font-size: xx-small;
+        font-size: x-small;
+
     }
 
-    /* #section2 {
-        padding: 0;
-    } */
+    #gpa {
+        font-size: large;
+    }
+
+    #csunTable, #lamcTable {
+        font-size: smaller;
+    }
 
     #edFigLeft {
         grid-row: 2;

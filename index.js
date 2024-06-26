@@ -25,6 +25,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+    $(document).ready(function() {
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); 
+
+            $.ajax({
+                url: $(this).attr('action'),
+                method: $(this).attr('method'),
+                data: $(this).serialize(),
+                dataType: "json",
+                success: function(response) {
+                    alert("Thank you for your message. I will be in touch with you soon. Have a great day!");
+                    $('#contactForm')[0].reset();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert('There was a problem sending your message. Please try again.');
+                    $('#contactForm')[0].reset();
+                }
+            });
+        });
+    });
+   
+
     const csunFront = document.getElementById("csunFront");
     const csunBack = document.getElementById("csunBack");
     const edFigLeft = document.getElementById("edFigLeft");

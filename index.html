@@ -12,6 +12,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
@@ -36,7 +38,7 @@
 
         </aside> 
         <figure id="headerFig">
-            <img id="headImg" src="assets/images/headerPhoto.jpg" alt="header photo"> 
+            <img id="headImg" src="assets/images/headerPhoto1.jpg" alt="header photo"> 
             <section id="controlBtns">
                 <a id="resumeIcon" href="#section7" class="control">
                     Resume
@@ -92,7 +94,7 @@
                 <h2 id="gpa">GPA 3.9</h2>
                 <table id="csunTable" class="edTables">
                     <tr id="tableHeader">
-                        <th id="courses">Notable Courses Taken
+                        <th id="courses">Notable Courses
                         </th>
                         <th id="gradeHeader">Grade</th>
                     </tr>
@@ -160,11 +162,10 @@
                     </tr>
                 </table>
             </section>
-
         </figure>
-       
-
     </section>
+
+
     <section id="section3" class="inPage">
         <header class="subHeaders">
             <h2 id="edIcon" class="smallLogo">
@@ -172,8 +173,24 @@
             </h2>
             <h2 class="titles">Experiences and Memories..</h2>
         </header>
-        <p>This section describes Experiences</p>
+        <figure id="projUte" class="projFigs">
+            <img src="assets/images/uteImg.png" 
+             id="uteImg" alt="Ute Aerospace">
+             <figcaption>
+                <h5>Lead Software Eng. Intern</h5>
+                <ul>
+                    <li>Led a team of 3 software interns to design and develop a website application.</li>
+                    <li>Full UX/UI Design using tools such as Figma and generative AI</li>
+                    <li>Developed 100% of tech stack infrastructure using an industry standard MERN stack</li>
+                    <li>Utilized an Agile approach to efficiently develop and manage resources</li>
+                    <li>Responsible for creating and delegating 100% of all subtask to S.E. team</li>
+                </ul>
+             </figcaption>
+        </figure>
     </section>
+
+
+
     <section id="section4" class="inPage">
         <header class="subHeaders">
             <h2 id="edIcon" class="smallLogo">
@@ -181,33 +198,174 @@
             </h2>
             <h2 class="titles">Tricks of the trade..</h2>
         </header>
-        <p>This section describes Skills</p>
+        <table class="skillsTbls">
+            <tr>
+                <tr id="tableHeader">
+                    <th id="courses">Languages
+                    </th>
+                    <th id="gradeHeader">Level Reached</th>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td class="grade">Intermediate/ Proficient</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td class="grade">Intermediate/ Beginner</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td class="grade">Intermediate/ Beginner</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td class="grade">Beginner</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td class="grade">Beginner</td>
+                </tr>
+            </tr>
+        </table>
+        <table class="skillsTbls">
+            <tr>
+                <tr id="tableHeader">
+                    <th id="courses">Databases
+                    </th>
+                    <th id="gradeHeader">Level Reached</th>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td class="grade">Intermediate/ Beginner</td>
+                </tr>
+                <tr>
+                    <td>MySQLite</td>
+                    <td class="grade">Intermediate/ Beginner</td>
+                </tr>
+                <tr>
+                    <td>Mongoose</td>
+                    <td class="grade">Beginner</td>
+                </tr>
+            </tr>
+        </table>
+        <table class="skillsTbls">
+            <tr>
+                <tr id="tableHeader">
+                    <th id="courses">Frameworks and Markups
+                    </th>
+                    <th id="gradeHeader">Level Reached</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td class="grade">Proficient</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td class="grade">Intermediate/ Proficient</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td class="grade">Beginner</td>
+                </tr>
+                <tr>
+                    <td>TKinter</td>
+                    <td class="grade">Beginner</td>
+                </tr>
+            </tr>
+            <table class="skillsTbls">
+                <tr>
+                    <tr id="tableHeader">
+                        <th id="courses">Certifications
+                        </th>
+                        <th id="gradeHeader">Expires</th>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud Practioner Foundational</td>
+                        <td class="grade">August 2025</td>
+                    </tr>
+        </table>
     </section>
+
+
+
     <section id="section5" class="inPage">
         <header class="subHeaders">
             <h2 id="edIcon" class="smallLogo">
                 <img id="edImg" class="btnImgs" src="assets/images/projectsLogo.png">
             </h2>
-            <h2 class="titles">Tricks of the trade..</h2>
+            <h2 class="titles">Missions Accomplished..</h2>
         </header>
-        <p>This section describes Skills</p>
+        <figure class="projFigs">
+            <img src="assets/images/hotelRes.png" 
+             class="projImgs" alt="Hotel Reservation">
+             <figcaption class="projCaps">
+                <h5>Hotel Reservation System</h5>
+                <p><span>Scrum Master</span> and lead developer for a hotel reservation <span>GUI</span> utilizig <span>Python, Tkinter, and MySQLite</span>. Employed an <span>Agile</span> design to model UML Use Case Diagrams, CRC Class Relation Cards, Database Layout, and more. As a class project designed to teach software engineering concepts, this project was both rewarding and challenging and featured my first time as a <span>leader</span> on a software project.</p>
+             </figcaption>
+        </figure>
+        <figure class="projFigs">
+            <img src="assets/images/gwc2.png" 
+            class="projImgs" alt="GWC Hackathon">
+             <figcaption class="projCaps">
+                <h5>Girls-Who-Code Hackathon</h5>
+                <p><span>1st place </span> micro-hackathon finish hosted by <span>CSUN and Girls-Who-Code</span>. My team designed, created and presented a MVP web application using a <span>PERN</span> tech stack that provided a solution to note fragmentaton. This product allowed students to upload and upvote on shared notes, sorted by course number and subject. Monetization of notes would be achieved based on the number of verified upvotes.</p>
+             </figcaption>
+        </figure>
+        <figure class="projFigs">
+            <img src="assets/images/code4Cause.png" 
+            class="projImgs" alt="Trivia Game">
+             <figcaption class="projCaps">
+                <h5>Code-For-A-Cause Hackathon</h5>
+                <p>Participated in my first ever hackathon hosted by <span>CSUN and Northrop Grumman </span> and, together with my teammates, won <span>2nd Place</span>! Over the span of just 48 hours, my team was able to design and build a <span>Trivia Game</span> for the <span>visually impaired</span>. This rewarding experience was filled with great memories of comraderie and friendship I will forever cherish.</p>
+             </figcaption>
+        </figure>
+        <figure id="astro" class="projFigs">
+            <img src="assets/images/starDisk.png" 
+            class="projImgs" alt="Infrared Plot">
+             <figcaption class="projCaps">
+                <h5>Astro Physics Research</h5>
+                <p>As a student researcher, I had the fortune of working with amazing scientific minds including <span>Dean of STEM Flarissa Morales, Professor Emil Sargsyan, Dr. Rudy Santana and JPL Scientist Dr. </span> in data analysis from the famed spaces telescopes <span>Keplar and Gaia</span>. Using <span>Python, Numpy, Pandas, MatPlotLib, and Scipy</span> we analyzed over 17,000 point sources of light to determine the likelyhood of the presense of <span>inter-planetary debris disks</span>. A first-time dive into professional, academic research; this project reinforced my love of learning and exploration.</p>
+             </figcaption>
+        </figure>
     </section>
+
+
+
     <section id="section6" class="inPage">
         <header class="subHeaders">
             <h2 id="edIcon" class="smallLogo">
                 <img id="edImg" class="btnImgs" src="assets/images/skillsBtn2.png">
             </h2>
-            <h2 class="titles">Tricks of the trade..</h2>
+            <h2 class="titles">Badges Unlocked..</h2>
         </header>
-        <p>This section describes Awards</p>
+        <ul class="badgesLst">
+            <li>
+                1st Place GWC Micro-Hackathon
+            </li>
+            <li>
+                2nd Place Code-For-A-Cause Hackathon
+            </li>
+            <li>
+                Summa Cum Laude Computer Science
+            </li>
+            <li>
+                Summa Cum Laude Mathematics
+            </li>
+        </ul>
     </section>
+
+
+
     <section id="section7" class="inPage">
         <h2>Resume</h2>
         <p>This section provides a pdf of resume</p>
     </section>
+
+
+
     <section id="section8" class="inPage">
         <h2>Contact</h2>
-        <form id="contactForm" action="send_email.php" method="post">
+        <form id="contactForm" action="https://formspree.io/f/xzzppwpa" method="post">
             <label for="fname">First Name</label>
             <input type="text" name="firstName" class="contactNames" id="fname" placeholder="Your First Name..">
 
@@ -230,9 +388,10 @@
             <textarea id="subject" name="subject" placeholder="Tell me more.." style="height: 150px"></textarea>
             <input id="contactSubmit" type="submit" value="Submit">
         </form>
+
     </section>
     <footer>
-        <p>Contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>&copy; 2024 Gregory Calderon <br> All Rights Reserved <br>Contact @ <a href="mailto:your.email@example.com">greg87calderon@gmail.com</a> </p>
     </footer>
     <script src="index.js"></script>
 </body>

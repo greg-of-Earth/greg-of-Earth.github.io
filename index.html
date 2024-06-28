@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <h2 id="intro">Hello, I'm Gregory</h2>
+    <h2 id="intro">Hello World, I'm Gregory</h2>
     <header id="topHeader">
         <aside id="clusterL" class="cluster">
             <a id="aboutIcon" href="#section1" class="btn">
@@ -64,112 +64,119 @@
 
         </aside>    
     </header>
-   <section id="section1" class="inPage">
+
+
+   <section id="section1" class="boxFrames">
         <header class="subHeaders">     
-            <h2 id="aboutIcon" class="smallLogo"><img class="btnImgs" src="assets/images/aboutLogo.png"></h2>            
+            <h2 id="aboutIcon" class="smallLogo"><img class="btnImgs" src="assets/images/aboutLogo.png" style="width: 80%"></h2>            
         <h2 class="titles">A brief introduction...</h2>
         </header>
         <article id="about">
             <p id="aboutP">Hello friends, and welcome to my webpage! Please, make yourself comfortable, and take a look around while you are here. <br> A little bit about myself: My name is Gregory but my friends call me Greg. You are welcome to call me either one. You probably noticed the game-like nature of the webpage. That is because this is how I think life should be lived: like a game! Frankly, there is a beginning and an end but all the fun stuff happens in-between. <br> Also, I am a bit of a computer science enthusiast who also enjoys a good physics lecture with a particular fondness for quantum mechanics. Professionaly, I am most excited about machine learning and automation and the ways it can help improve humanity. It is my goal in life to make the world a better place and I am excited to share the journey and accomplish that goal with all of you!</p>
         </article>
     </section>
-    <section id="section2" class="inPage">
+
+
+    <section id="section2" class="boxFrames">
         <header class="subHeaders">
             <h2 id="edIcon" class="smallLogo">
-                <img id="edImg" class="btnImgs" src="assets/images/edLogo.png">
+                <img id="edImg" class="btnImgs" src="assets/images/edLogo.png" style="width: 80%">
             </h2>
             <h2 class="titles">My college days..</h2>
         </header>
-        
-        <figure id="edFigLeft" class="inEdFigs">
-            <section id="csunFront">
-                <img id="csunLogo" class="schoolLogos" src="assets/images/csun.png">
-                <h2 id="csunHeader" class="schoolHeaders">CSUN</h2>
-                <h4 id="majorHeader" class="majorHeaders">Computer Science<br>Physics</h4>
-            </section>
-            
-            <section id="csunBack">
-                <h3 id="edBackTitle1" class="edBackHeader">Bachelor: Computer Science<br>Minor: Physics</h3>
-                
-                <h2 id="gpa">GPA 3.9</h2>
-                <table id="csunTable" class="edTables">
-                    <tr id="tableHeader">
-                        <th id="courses">Notable Courses
-                        </th>
-                        <th id="gradeHeader">Grade</th>
-                    </tr>
-                    <tr>
-                        <td>Algorithm Design</td>
-                        <td class="grade">A</td>
-                    </tr>
-                    <tr>
-                        <td>Software Engineering</td>
-                        <td class="grade">A</td>
-                    </tr>
-                    <tr>
-                        <td>Probability and Statistics</td>
-                        <td class="grade">B+</td>
-                    </tr>
-                    <tr>
-                        <td>Automata</td>
-                        <td class="grade">A</td>
-                    </tr>
-                    <tr>
-                        <td>Quantum Mechanics</td>
-                        <td class="grade">A</td>
-                    </tr>
-                </table>
-            </section>
-            
-        </figure>
-        <figure id="edFigRight" class="inEdFigs">
-            <section id="lamcFront">
-                <img id="lamcLogo" class="schoolLogos" src="assets/images/lamc1.png">
-                <h2 id="lamcHeader" class="schoolHeaders">LAMC</h2>
-                <h4 id="majorHeader" class="majorHeaders">Computer Science<br>Mathematics</h4>
-            </section>
+        <div class="edDiv">
 
-            <section id="lamcBack">
-                <h3 id="edBackTitle1" class="edBackHeader">Associate: Computer Science<br>Associate: Mathematics</h3>
-                <h2 id="gpa">GPA 3.9</h2>
-                <table id="lamcTable" class="edTables">
-                    <tr>
+            <figure id="edFigLeft" class="inEdFigs">
+                <section id="csunFront" class="edFronts">
+                    <img id="csunLogo" class="schoolLogos" src="assets/images/csun.png">
+                    <h2 id="csunHeader" class="schoolHeaders">CSUN</h2>
+                    <h4 id="majorHeader" class="majorHeaders">Computer Science<br>Physics</h4>
+                </section>
+                
+                <section id="csunBack" class="edBacks">
+                    <h3 id="edBackTitle1" class="edBackHeader">Bachelor: Computer Science<br>Minor: Physics</h3>
+                    
+                    <h2 id="gpa">GPA 3.9</h2>
+                    <table id="csunTable" class="edTables">
                         <tr id="tableHeader">
-                            <th id="courses">Notable Courses Taken
+                            <th id="courses">Notable Courses
                             </th>
                             <th id="gradeHeader">Grade</th>
                         </tr>
                         <tr>
-                            <td>C++ Object Oriented</td>
+                            <td>Algorithm Design</td>
                             <td class="grade">A</td>
                         </tr>
                         <tr>
-                            <td>Advanced Data Structures</td>
+                            <td>Software Engineering</td>
                             <td class="grade">A</td>
                         </tr>
                         <tr>
-                            <td>Linear Algebra</td>
+                            <td>Probability and Statistics</td>
+                            <td class="grade">B+</td>
+                        </tr>
+                        <tr>
+                            <td>Automata</td>
                             <td class="grade">A</td>
                         </tr>
                         <tr>
-                            <td>Assembly Language</td>
+                            <td>Quantum Mechanics</td>
                             <td class="grade">A</td>
                         </tr>
+                    </table>
+                </section>
+                
+            </figure>
+            <figure id="edFigRight" class="inEdFigs">
+                <section id="lamcFront" class="edFronts">
+                    <img id="lamcLogo" class="schoolLogos" src="assets/images/lamc1.png">
+                    <h2 id="lamcHeader" class="schoolHeaders">LAMC</h2>
+                    <h4 id="majorHeader" class="majorHeaders">Computer Science<br>Mathematics</h4>
+                </section>
+
+                <section id="lamcBack" class="edBacks">
+                    <h3 id="edBackTitle1" class="edBackHeader">Associate: Computer Science<br>Associate: Mathematics</h3>
+                    <h2 id="gpa">GPA 3.9</h2>
+                    <table id="lamcTable" class="edTables">
                         <tr>
-                            <td>Differiential Equations</td>
-                            <td class="grade">A</td>
+                            <tr id="tableHeader">
+                                <th id="courses">Notable Courses Taken
+                                </th>
+                                <th id="gradeHeader">Grade</th>
+                            </tr>
+                            <tr>
+                                <td>C++ Object Oriented</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Data Structures</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td>Linear Algebra</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td>Assembly Language</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td>Differiential Equations</td>
+                                <td class="grade">A</td>
+                            </tr>
                         </tr>
-                    </tr>
-                </table>
-            </section>
-        </figure>
+                    </table>
+                </section>
+            </figure>
+
+        </div>
     </section>
 
 
-    <section id="section3" class="inPage">
+    <section id="section3" class="boxFrames">
         <header class="subHeaders">
-            <h2 id="edIcon" class="smallLogo">
-                <img id="edImg" class="btnImgs" src="assets/images/xpLogo.png">
+            <h2 id="xpIcon" class="smallLogo">
+                <img id="xpImg" class="btnImgs" src="assets/images/xpLogo.png" style="width: 80%;">
             </h2>
             <h2 class="titles">Experiences and Memories..</h2>
         </header>
@@ -191,10 +198,10 @@
 
 
 
-    <section id="section4" class="inPage">
+    <section id="section4" class="boxFrames">
         <header class="subHeaders">
-            <h2 id="edIcon" class="smallLogo">
-                <img id="edImg" class="btnImgs" src="assets/images/skillsBtn.png">
+            <h2 id="skillsIcon" class="smallLogo">
+                <img id="edImg" class="btnImgs" src="assets/images/skillsBtn.png" style="width: 80%;">
             </h2>
             <h2 class="titles">Tricks of the trade..</h2>
         </header>
@@ -288,10 +295,10 @@
 
 
 
-    <section id="section5" class="inPage">
+    <section id="section5" class="boxFrames">
         <header class="subHeaders">
-            <h2 id="edIcon" class="smallLogo">
-                <img id="edImg" class="btnImgs" src="assets/images/projectsLogo.png">
+            <h2 id="projectsIcon" class="smallLogo">
+                <img id="projImg" class="btnImgs" src="assets/images/projectsLogo.png" style="width: 80%;"">
             </h2>
             <h2 class="titles">Missions Accomplished..</h2>
         </header>
@@ -331,10 +338,10 @@
 
 
 
-    <section id="section6" class="inPage">
+    <section id="section6" class="boxFrames">
         <header class="subHeaders">
-            <h2 id="edIcon" class="smallLogo">
-                <img id="edImg" class="btnImgs" src="assets/images/skillsBtn2.png">
+            <h2 id="awardsIcon" class="smallLogo">
+                <img id="awardsImg" class="btnImgs" src="assets/images/skillsBtn2.png" style="width: 80%;"">
             </h2>
             <h2 class="titles">Badges Unlocked..</h2>
         </header>
@@ -356,15 +363,19 @@
 
 
 
-    <section id="section7" class="inPage">
-        <h2>Resume</h2>
-        <p>This section provides a pdf of resume</p>
+    <section id="section7" class="boxFrames">
+        <h2 class="subHeaders">Resume</h2>
+        <figure class="resume">
+            <img  src="assets/images/resume-1.png">
+            <img  src="assets/images/resume-2.png">
+        </figure>
+        
     </section>
 
 
 
-    <section id="section8" class="inPage">
-        <h2>Contact</h2>
+    <section id="section8" class="boxFrames">
+        <h2 class="subHeaders">Contact</h2>
         <form id="contactForm" action="https://formspree.io/f/xzzppwpa" method="post">
             <label for="fname">First Name</label>
             <input type="text" name="firstName" class="contactNames" id="fname" placeholder="Your First Name..">

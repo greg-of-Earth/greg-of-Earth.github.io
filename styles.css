@@ -249,16 +249,19 @@ a:hover, a:focus { color: blue;}
     border-style: solid;
     border-radius: 25%;
     text-align: center;
-    padding: 50px;
+    padding: 2%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .edDiv {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row;
     justify-content: space-evenly;
-    margin: 5px 5px;
+    margin: 5px 5px; */
 }
 
 .schoolHeaders {
@@ -271,6 +274,19 @@ a:hover, a:focus { color: blue;}
 .majorHeaders {
     margin-top: 1%;
     text-align: center;
+}
+
+.flipBtn {
+    float: right;
+    transform: rotate(330deg);
+    border: none;
+    background: none;
+    color: blue;
+    font-size: larger;
+    text-decoration: underline;
+    font-family: "Comic Sans MS", cursive;
+    margin-bottom: 5%;
+    margin-right: 10%;
 }
 
 .edFronts {
@@ -313,6 +329,8 @@ table, th, td {
 
 .edBacks {
     display: none;
+    width: 90%;
+    align-self: center;
     padding: inherit;
     padding-top: initial;
 }

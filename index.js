@@ -56,26 +56,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const lamcBack = document.getElementById("lamcBack");
     const edFigRight = document.getElementById("edFigRight");
 
-    edFigLeft.addEventListener("mouseover", function(e){hideFrontCards(e,csunFront, csunBack)});
-    edFigLeft.addEventListener("mouseout", function(e){hideBackCards(e,csunFront, csunBack)});
-    
-    edFigRight.addEventListener("mouseover", function(e){hideFrontCards(e,lamcFront, lamcBack)});
-    edFigRight.addEventListener("mouseout", function(e){hideBackCards(e,lamcFront, lamcBack)});
+    edFigLeft.addEventListener("click", function(e){hideFrontCards(e,csunFront, csunBack)});
+    edFigRight.addEventListener("click", function(e){hideFrontCards(e,lamcFront, lamcBack)});
+
+
 
     function hideFrontCards(e, front, back) {
         e.preventDefault();
         if(front.style.display !== 'none') {
             front.style.display = 'none';
             back.style.display = 'grid';
-        }
-    }
-
-    function hideBackCards(e, front, back) {
-        e.preventDefault();
-        if(back.style.display !== 'none') {
+        }else if(back.style.display !== 'none') {
             back.style.display = 'none';
             front.style.display = 'block';
         }
     }
+
      
 });

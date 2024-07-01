@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+
 #intro {
     display: flex;
     justify-content: center;
@@ -390,6 +391,11 @@ table, th, td {
 
 .projCaps > h5 {
     text-decoration: underline;
+}
+
+.projCaps p {
+    text-align: justify;
+    margin-right: 2%;
 }
 
 .projFigs > img {

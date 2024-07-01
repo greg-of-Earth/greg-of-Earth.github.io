@@ -244,7 +244,6 @@ a:hover, a:focus { color: blue;}
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
 
-
 .schoolHeaders {
     text-decoration: underline;
     font-size: xx-large;
@@ -283,8 +282,11 @@ a:hover, a:focus { color: blue;}
 }
 
 .edFronts {
-    min-width: 300px;
     padding-top: 5%;
+}
+
+.schoolLogos {
+    border-radius: 30%;
 }
 
 table, th, td {
@@ -548,6 +550,8 @@ table, th, td {
     .schoolLogos {
         justify-items: center;
         max-width: 100px;
+       
+        border-radius: 30%;
     }
 
 }

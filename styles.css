@@ -465,7 +465,25 @@ table, th, td {
         align-items: center;
         margin: 5px;
     }
+    
+    #clusterL {
+        order: 2;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    #clusterR {
+        order:3;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     #controlBtns {
         flex-direction: column;

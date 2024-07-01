@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if(front.style.display !== 'none') {
             front.style.display = 'none';
             back.style.display = 'grid';
+            back.style.justifyContent = 'space-evenly';
+            back.style.margin = '7%';
         }else if(back.style.display !== 'none') {
             back.style.display = 'none';
             front.style.display = 'block';

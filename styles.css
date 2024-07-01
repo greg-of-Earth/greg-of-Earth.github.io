@@ -370,6 +370,12 @@ table, th, td {
     justify-content: center;
     margin: 25px;
     box-shadow:10px 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.badgesLst {
+    padding: 0;
 }
 
 /* projects */
@@ -404,13 +410,12 @@ table, th, td {
 
 /*resume*/
 #section7 .subHeaders {
-    margin-left: 35px;
-    width: 90%;
-    align-self: center;
+    margin-left: 2%
 }
 
 .resume {
-    margin-bottom: 65px;
+    margin: 5%;
+    border: 1px solid gray;
 }
 
 .resume > img{
@@ -418,6 +423,8 @@ table, th, td {
   border: 1px solid grey;
   margin: 25px;
 }
+
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -531,10 +538,4 @@ table, th, td {
         max-width: 100px;
     }
 
-    .boxFrames {
-        align-items: center;
-    }
-
-
-    
 }
